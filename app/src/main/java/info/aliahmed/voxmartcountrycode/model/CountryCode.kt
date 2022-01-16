@@ -12,4 +12,8 @@ data class CountryCode(
     val countryCode: String? = null,
     val nationalPrefix: String? = null,
     val countryIcon: String?= null
-)
+){
+    override fun toString(): String {
+        return "$countryShortName ($countryCode)"
+    }
+}

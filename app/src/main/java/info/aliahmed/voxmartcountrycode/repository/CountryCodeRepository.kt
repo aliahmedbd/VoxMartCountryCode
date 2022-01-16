@@ -12,4 +12,13 @@ class CountryCodeRepository @Inject constructor(private val countryCodeDatabase:
             it
         }
 
+
+   suspend fun addCountryCode(countryCode: CountryCode) {
+        try {
+            countryCodeDatabase.countryCodeDao.insertCountryCode(countryCode)
+        } catch (e: Exception) {
+
+        }
+    }
+
 }
