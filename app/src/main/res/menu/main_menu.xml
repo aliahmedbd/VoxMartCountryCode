@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dialFragment"
+        android:icon="@drawable/telephone"
+        android:title="@string/dial" />
+    <item
+        android:id="@+id/countryCodeFragment"
+        android:icon="@drawable/globe"
+        android:title="@string/country_codes" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_pic"
+        android:title="@string/profile" />
+
+</menu>
