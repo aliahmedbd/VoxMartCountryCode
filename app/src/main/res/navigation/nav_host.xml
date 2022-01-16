@@ -17,10 +17,5 @@
         android:label="fragment_country_code"
         tools:layout="@layout/fragment_country_code" />
 
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="info.aliahmed.voxmartcountrycode.view.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 
 </navigation>

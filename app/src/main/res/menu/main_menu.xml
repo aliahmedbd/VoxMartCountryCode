@@ -10,9 +10,4 @@
         android:icon="@drawable/globe"
         android:title="@string/country_codes" />
 
-    <item
-        android:id="@+id/profileFragment"
-        android:icon="@drawable/profile_pic"
-        android:title="@string/profile" />
-
 </menu>
