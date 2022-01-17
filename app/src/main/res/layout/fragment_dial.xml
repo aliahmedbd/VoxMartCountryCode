@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtLabel">
 
         <EditText
-            android:id="@+id/edtUserNumber"
+            android:id="@+id/edtDialNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/edtDialedNumber"
+            android:id="@+id/edtUserNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -127,6 +127,7 @@
             android:hint="@string/parsed_number"
             android:inputType="phone"
             android:padding="14dp"
+            android:textColor="@color/black"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 

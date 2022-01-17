@@ -100,21 +100,21 @@ class MainActivity : AppCompatActivity() {
             countryName = "United Kingdom",
             countryShortName = "UK",
             countryCode = "+44",
-            nationalPrefix = "0"
+            nationalPrefix = 0
         )
 
         val frCode = CountryCode(
             countryName = "France",
             countryShortName = "FR",
             countryCode = "+33",
-            nationalPrefix = "0"
+            nationalPrefix = 0
         )
 
         val usCode = CountryCode(
             countryName = "United States",
             countryShortName = "US",
             countryCode = "+1",
-            nationalPrefix = "1"
+            nationalPrefix = 1
         )
 
         viewModel.addCountryCode(countryCode = ukCode)
