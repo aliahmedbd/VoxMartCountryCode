@@ -18,8 +18,8 @@ class NumberParser(
 
     fun parse(dialledNumber: String?, userNumber: String?): String? {
         val internationalCode = countryCodes[destination]
-        if (validNumber(dialledNumber, userNumber)) {
-            return if (internationalCode?.let { dialledNumber?.contains(it) } == true) {
+        if (validNumber(dialledNumber, userNumber) && dialledNumber?.let { validCountryDialNumber(it) } == true) {
+            return if (internationalCode?.let { dialledNumber.contains(it) } == true) {
                 dialledNumber
             } else {
                 val number = dialledNumber?.drop(1)
@@ -47,5 +47,33 @@ class NumberParser(
                 false
             }
         }
+    }
+
+    fun validNumber(number: String): Boolean {
+        return when {
+            number.isNullOrEmpty() -> {
+                false
+            }
+            number.checkSqlInjection() -> {
+                false
+            }
+            number.checkValidNumber() -> {
+                true
+            }
+            else -> {
+                false
+            }
+        }
+    }
+
+    fun validCountryDialNumber(number: String): Boolean {
+        val countryCode = countryCodes[destination]
+        val nationalPrefix = nationalTrunkPrefix[destination].toString()
+        if (countryCode?.let { number.contains(it) } == true) {
+            return true
+        } else if (number.startsWith(nationalPrefix)) {
+            return true
+        }
+        return false
     }
 }

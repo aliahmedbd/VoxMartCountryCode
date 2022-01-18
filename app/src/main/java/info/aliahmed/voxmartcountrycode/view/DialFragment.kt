@@ -62,7 +62,10 @@ class DialFragment : Fragment() {
             } else {
                 val dialNumber = "${binding.edtDialNumber.text}"
                 val userNumber = "${binding.edtUserNumber.text}"
-                if (numberParser.validNumber(dialNumber, userNumber)) {
+                if (numberParser.validNumber(dialNumber) &&
+                    numberParser.validNumber(userNumber) &&
+                    numberParser.validCountryDialNumber(dialNumber)
+                ) {
                     binding.edtParseNumber.setText(numberParser.parse(dialNumber, userNumber))
                 } else {
                     Toast.makeText(
