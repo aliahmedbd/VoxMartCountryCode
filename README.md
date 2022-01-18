@@ -1,7 +1,7 @@
 # VoxMartCountryCode
 This repository contains an Android project regarding the Country Mobile Number parser. To complete this project I used Kotlin, MVVM Pattern, Android Jetpack Room, Kotlin coroutine, Junit4, Google Truth etc.
 
-### Application Preview
+### App Preview
 <img src="https://github.com/aliahmedbd/VoxMartCountryCode/blob/master/20220118_131715.gif" alt="" data-canonical-src="https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/Screenshot%202021-12-19%20at%205.45.34%20PM.png" width="300" height="550" />
 
 
