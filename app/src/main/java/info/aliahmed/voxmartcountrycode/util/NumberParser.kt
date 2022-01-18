@@ -29,7 +29,7 @@ class NumberParser(
         return null
     }
 
-    fun validNumber(dialledNumber: String?, userNumber: String?): Boolean {
+    private fun validNumber(dialledNumber: String?, userNumber: String?): Boolean {
         return when {
             dialledNumber.isNullOrEmpty() -> {
                 false

@@ -51,6 +51,7 @@ class CountryCodeFragment : Fragment() {
 
     private fun initialize() {
         binding.rvCountyList.layoutManager = LinearLayoutManager(requireContext())
+
         viewModel.getCountryCode().observe(viewLifecycleOwner, {
             val adapter = CountryListAdapter(it)
             binding.rvCountyList.adapter = adapter

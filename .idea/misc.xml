@@ -14,6 +14,8 @@
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.29030797101449274" />
         <entry key="app/src/main/res/layout/item_country_code.xml" value="0.28396739130434784" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.29074074074074074" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.29074074074074074" />
         <entry key="app/src/main/res/xml/activity_splash_scene.xml" value="0.296195652173913" />
       </map>
     </option>
